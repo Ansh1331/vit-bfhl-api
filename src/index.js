@@ -147,14 +147,9 @@ app.get("/", (_req, res) => {
 });
 
 app.get("/bfhl", (_req, res) => {
-  res.status(200).json({
-    ok: true,
-    message: "Welcome to the BFHL API",
-    endpoints: {
-      post_bfhl: "https://vit-bfhl-api-bit0215.vercel.app/bfhl",
-    },
-  });
+  res.status(200).json({ status: "ok" });
 });
+
 
 
 app.listen(PORT, () => {
